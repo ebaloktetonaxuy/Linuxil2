@@ -24,7 +24,7 @@ class GeekSettingsMod(loader.Module):
     """Advanced settings for GeekTG"""
 
     strings = {
-        "name": "GeekSettings",
+        "name": "LinuxilSettings",
         "watchers": "👀 <b>Watchers:</b>\n\n<b>{}</b>",
         "mod404": "🚫 <b>Watcher {} not found</b>",
         "already_disabled": "👀 <b>Watcher {} is already disabled</b>",
@@ -35,9 +35,9 @@ class GeekSettingsMod(loader.Module):
         "no_cmd": "🔰 <b>Please, specify command to toggle NoNick for</b>",
         "cmd_nn": "🔰 <b>NoNick for </b><code>{}</code><b> is now {}</b>",
         "cmd404": "🔰 <b>Command not found</b>",
-        "inline_settings": "⚙️ <b>Here you can configure your GeekTG settings</b>",
-        "confirm_update": "🪂 <b>Please, confirm that you want to update. Your userbot will be restarted</b>",
-        "confirm_restart": "🔄 <b>Please, confirm that you want to restart</b>",
+        "inline_settings": "⚙️ <b>Здесь вы можете настроить параметры Linuxil</b>",
+        "confirm_update": "🪂 <b>Пожалуйста, подтвердите, что вы хотите обновить. Ваш бот будет перезапущен</b>",
+        "confirm_restart": "🔄 <b>Пожалуйста, подтвердите, что хотите перезапустить</b>",
     }
 
     def get_watchers(self) -> tuple:
@@ -253,8 +253,8 @@ class GeekSettingsMod(loader.Module):
                 self.strings("confirm_update"),
                 reply_markup=[
                     [
-                        {"text": "🪂 Update", "callback": self.inline__update},
-                        {"text": "🚫 Cancel", "callback": self.inline__close},
+                        {"text": "🪂 Обновить", "callback": self.inline__update},
+                        {"text": "🚫 Отмена", "callback": self.inline__close},
                     ]
                 ],
             )
@@ -273,8 +273,8 @@ class GeekSettingsMod(loader.Module):
                 self.strings("confirm_restart"),
                 reply_markup=[
                     [
-                        {"text": "🔄 Restart", "callback": self.inline__restart},
-                        {"text": "🚫 Cancel", "callback": self.inline__close},
+                        {"text": "🔄 Перезагрузка", "callback": self.inline__restart},
+                        {"text": "🚫 Отмена", "callback": self.inline__close},
                     ]
                 ],
             )
@@ -348,13 +348,13 @@ class GeekSettingsMod(loader.Module):
             ],
             [
                 {
-                    "text": "🔄 Restart",
+                    "text": "🔄 Перезагрузка",
                     "callback": self.inline__restart,
                     "args": (True,),
                 },
-                {"text": "🪂 Update", "callback": self.inline__update, "args": (True,)},
+                {"text": "🪂 Обновить", "callback": self.inline__update, "args": (True,)},
             ],
-            [{"text": "😌 Close menu", "callback": self.inline__close}],
+            [{"text": "😌 Закрыть меню", "callback": self.inline__close}],
         ]
 
     @loader.owner
