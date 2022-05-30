@@ -123,7 +123,7 @@ class LoaderMod(loader.Module):
     """Loads modules"""
 
     strings = {
-        "name": "Loader",
+        "name": "Linuxil_Loader",
         "repo_config_doc": "Полный URL-адрес репозитория модуля",
         "avail_header": "<b>☁️ Доступные официальные модули из репо</b>",
         "select_preset": "<b>⚠️ Выберите предустановку</b>",
