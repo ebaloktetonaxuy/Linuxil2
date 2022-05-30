@@ -45,7 +45,7 @@ class GeekSecurityMod(loader.Module):
     """Control security settings (geek3.0.8alpha+)"""
 
     strings = {
-        "name": "GeekSecurity",
+        "name": "LinuxilSecurity",
         "no_command": "🚫 <b>Command </b><code>{}</code><b> not found!</b>",
         "permissions": "🔐 <b>Here you can configure permissions for </b><code>{}{}</code>",
         "close_menu": "🙈 Close this menu",
@@ -79,15 +79,15 @@ class GeekSecurityMod(loader.Module):
         "not_a_user": "🚫 <b>Specified entity is not a user</b>",
         "li": '⦿ <b><a href="tg://user?id={}">{}</a></b>',
         "warning": (
-            '⚠️ <b>Please, confirm, that you want to add <a href="tg://user?id={}">{}</a> '
-            "to group </b><code>{}</code><b>!\n"
-            "This action may reveal personal info and grant "
-            "full or partial access to userbot to this user</b>"
+            '⚠️ <b>Пожалуйста, подтвердите, что хотите добавить <a href="tg://user?id={}">{}</a> '
+            "группировать </b><code>{}</code><b>!\n"
+            "Это действие может раскрыть личную информацию и предоставить "
+            "полный или частичный доступ к юзерботу этому пользователю</b>"
         ),
-        "cancel": "🚫 Cancel",
-        "confirm": "👑 Confirm",
-        "self": "🚫 <b>You can't promote/demote yourself!</b>",
-        "restart": "<i>🔄 Restart may be required to commit changes</i>",
+        "cancel": "🚫 Отмена",
+        "confirm": "👑 Подтверждать",
+        "self": "🚫 <b>Вы не можете продвигать/понижать себя!</b>",
+        "restart": "<i>🔄 Для фиксации изменений может потребоваться перезагрузка</i>",
     }
 
     def get(self, *args) -> dict:
