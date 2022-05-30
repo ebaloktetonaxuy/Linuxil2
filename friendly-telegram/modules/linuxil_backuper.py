@@ -20,14 +20,14 @@ class BackuperMod(loader.Module):
     """Backup everything and anything"""
 
     strings = {
-        "name": "Backuper",
-        "backup_caption": "☝️ <b>This is your database backup. Do not give it to anyone, it contains personal info.</b>",
-        "reply_to_file": "🚫 <b>Reply to .{} file</b>",
-        "db_restored": "🔄 <b>Database updated, restarting...</b>",
-        "modules_backup": "🗃 <b>Backup mods ({})</b>",
-        "notes_backup": "🗃 <b>Backup notes ({})</b>",
-        "mods_restored": "✅ <b>Modes restored, restarting</b>",
-        "notes_restored": "✅ <b>Notes restored</b>",
+        "name": "Linuxil_Backuper",
+        "backup_caption": "☝️ <b>Это резервная копия вашей базы данных. Не давайте его никому, он содержит личную информацию.</b>",
+        "reply_to_file": "🚫 <b>Ответить на .{} файл</b>",
+        "db_restored": "🔄 <b>Обновление базы данных, перезапуск...</b>",
+        "modules_backup": "🗃 <b>Бэкап модов ({})</b>",
+        "notes_backup": "🗃 <b>Заметки о резервном копировании ({})</b>",
+        "mods_restored": "✅ <b>Режимы восстановлены, перезапуск</b>",
+        "notes_restored": "✅ <b>Заметки восстановлены</b>",
     }
 
     async def client_ready(self, client, db):
