@@ -24,34 +24,34 @@ class HelpMod(loader.Module):
 
     strings = {
         "name": "Help",
-        "bad_module": "<b>🚫 <b>Module</b> <code>{}</code> <b>not found</b>",
+        "bad_module": "<b>🚫 <b>Модуль</b> <code>{}</code> <b>не доступен</b>",
         "single_mod_header": "📼 <b>{}</b>:",
         "single_cmd": "\n▫️ <code>{}{}</code> 👉🏻 ",
         "undoc_cmd": "🦥 No docs",
-        "all_header": "👓 <b>{} mods available, {} hidden:</b>",
+        "all_header": "☁️ <b> Linuxil Userbot</b>\n\n<b>🔓 Доступные модули: {}</b>\n<b> 🔒 Скрытые:</b>",
         "mod_tmpl": "\n{} <code>{}</code>",
         "first_cmd_tmpl": ": ( {}",
         "cmd_tmpl": " | {}",
-        "args": "🚫 <b>Args are incorrect</b>",
-        "set_cat": "ℹ️ <b>{} placed in category {}</b>",
+        "args": "🚫 <b>Аргументы неверны</b>",
+        "set_cat": "ℹ️ <b>{} помещен в категорию {}</b>",
         "no_mod": "🚫 <b>Specify module to hide</b>",
         "hidden_shown": "👓 <b>{} modules hidden, {} module shown:</b>\n{}\n{}",
         "ihandler": "\n🎹 <code>{}</code> 👉🏻 ",
         "undoc_ihandler": "🦥 No docs",
-        "joined": "👩‍💼 <b>Joined the</b> <a href='https://t.me/GeekTGChat'>support chat</a>",
-        "join": "👩‍💼 <b>Join the</b> <a href='https://t.me/GeekTGChat'>support chat</a>",
+        "joined": "👩‍💼 <b>Joined the</b> <a href='https://t.me/linuxilchat'>support chat</a>",
+        "join": "👩‍💼 <b>Join the</b> <a href='https://t.me/linuxilchat'>support chat</a>",
     }
 
     def __init__(self):
         self.config = loader.ModuleConfig(
             "core_emoji",
-            "▪️",
+            "🌌",
             lambda: "Core module bullet",
-            "geek_emoji",
-            "🕶",
+            "linuxil_emoji",
+            "🌠",
             lambda: "Geek-only module bullet",
             "plain_emoji",
-            "▫️",
+            "✨",
             lambda: "Plain module bullet",
         )
 
@@ -300,13 +300,13 @@ class HelpMod(loader.Module):
         if await self.allmodules.check_security(
             message, security.OWNER | security.SUDO
         ):
-            await self._client(JoinChannelRequest("https://t.me/GeekTGChat"))
+            await self._client(JoinChannelRequest("https://t.me/linuxilChat"))
 
             try:
                 await self.inline.form(
                     self.strings("joined", message),
                     reply_markup=[
-                        [{"text": "👩‍💼 Chat", "url": "https://t.me/GeekTGChat"}]
+                        [{"text": "👩‍💼 Chat", "url": "https://t.me/linuxilChat"}]
                     ],
                     ttl=10,
                     message=message,
@@ -318,7 +318,7 @@ class HelpMod(loader.Module):
                 await self.inline.form(
                     self.strings("join", message),
                     reply_markup=[
-                        [{"text": "👩‍💼 Chat", "url": "https://t.me/GeekTGChat"}]
+                        [{"text": "👩‍💼 Chat", "url": "https://t.me/Linuxilchat"}]
                     ],
                     ttl=10,
                     message=message,
