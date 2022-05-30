@@ -42,16 +42,16 @@ class UpdaterMod(loader.Module):
     strings = {
         "name": "Updater",
         "source": "ℹ️ <b>Read the source code from</b> <a href='{}'>here</a>",
-        "restarting_caption": "🔄 <b>Restarting...</b>",
-        "downloading": "🔄 <b>Downloading updates...</b>",
+        "restarting_caption": "🔄 <b>Перезапуск...</b>",
+        "downloading": "🔄 <b>Загрузка обновлений...</b>",
         "downloaded": (
-            "✅ <b>Downloaded successfully.\n"
+            "✅ <b>Скачано успешно.\n"
             "Please type</b>"
             "<code>.restart</code> <b>to restart the bot.</b>"
         ),
-        "already_updated": "✅ <b>Already up to date!</b>",
-        "installing": "🔁 <b>Installing updates...</b>",
-        "success": "✅ <b>Restart successful!</b>",
+        "already_updated": "✅ <b>Уже в курсе!</b>",
+        "installing": "🔁 <b>Установка обновлений...</b>",
+        "success": "✅ <b>Перезапушен успешно!</b>",
         "heroku_warning": (
             "⚠️ <b>Heroku API key has not been set.</b>\n"
             "Update was successful but updates will reset every time the bot restarts."
