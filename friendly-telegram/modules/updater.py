@@ -40,7 +40,7 @@ class UpdaterMod(loader.Module):
     """Updates itself"""
 
     strings = {
-        "name": "Updater",
+        "name": "Linuxil_Updater",
         "source": "ℹ️ <b>Read the source code from</b> <a href='{}'>here</a>",
         "restarting_caption": "🔄 <b>Перезапуск...</b>",
         "downloading": "🔄 <b>Загрузка обновлений...</b>",
