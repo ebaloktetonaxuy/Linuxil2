@@ -68,7 +68,7 @@ class UpdaterMod(loader.Module):
     def __init__(self):
         self.config = loader.ModuleConfig(
             "GIT_ORIGIN_URL",
-            "https://github.com/GeekTG/Friendly-Telegram",
+            "https://github.com/AmoreForever/Linuxil2",
             lambda m: self.strings("origin_cfg_doc", m),
         )
 
@@ -196,7 +196,7 @@ class UpdaterMod(loader.Module):
                     [
                         {
                             "text": "☁️ Install to Okteto",
-                            "url": "https://cloud.okteto.com/#/deploy?repository=https://github.com/GeekTG/Friendly-Telegram",
+                            "url": "https://cloud.okteto.com/#/deploy?repository=https://github.com/AmoreForever/Linuxil2",
                         },
                         {
                             "text": "🖥 Install to lavhost",
