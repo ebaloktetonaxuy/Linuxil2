@@ -52,7 +52,7 @@ logger = logging.getLogger(__name__)
 
 photo = io.BytesIO(
     requests.get(
-        "https://github.com/GeekTG/Friendly-Telegram/raw/master/friendly-telegram/bot_avatar.png" # noqa: E501, W505
+        "https://siasky.net/nAH4Zvz2kXx4swH0IrfpNmoBc1ogMQNTmhpwktMYGO9oIA" # noqa: E501, W505
     ).content
 )
 photo.name = "avatar.png"
@@ -391,7 +391,7 @@ class InlineManager:
             await r.delete()
 
             # Set its name to user's name + GeekTG Userbot
-            m = await conv.send_message(f"🤖 GeekTG Userbot of {self._name}")
+            m = await conv.send_message(f"🖤 Linuxil Userbot of {self._name}")
             r = await conv.get_response()
 
             await m.delete()
@@ -399,7 +399,7 @@ class InlineManager:
 
             # Generate and set random username for bot
             uid = rand(6)
-            username = f"GeekTG_{uid}_Bot"
+            username = f"Linuxil_{uid}_Bot"
 
             m = await conv.send_message(username)
             r = await conv.get_response()
@@ -473,7 +473,7 @@ class InlineManager:
 
             for row in r.reply_markup.rows:
                 for button in row.buttons:
-                    if re.search(r"@geektg_[0-9a-zA-Z]{6}_bot", button.text, re.I):
+                    if re.search(r"@linuxil_[0-9a-zA-Z]{6}_bot", button.text, re.I):
                         m = await conv.send_message(button.text)
                         r = await conv.get_response()
 
@@ -821,7 +821,7 @@ class InlineManager:
                             "HTML",
                             disable_web_page_preview=True,
                         ),
-                        thumb_url="https://img.icons8.com/fluency/50/000000/info-squared.png",  # skipcq: FLK-E501
+                        thumb_url="https://siasky.net/nAH4Zvz2kXx4swH0IrfpNmoBc1ogMQNTmhpwktMYGO9oIA",  # skipcq: FLK-E501
                         thumb_width=128,
                         thumb_height=128,
                     )
