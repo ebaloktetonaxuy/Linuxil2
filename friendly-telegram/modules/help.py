@@ -28,7 +28,7 @@ class HelpMod(loader.Module):
         "single_mod_header": "📼 <b>{}</b>:",
         "single_cmd": "\n▫️ <code>{}{}</code> 👉🏻 ",
         "undoc_cmd": "🦥 No docs",
-        "all_header": "☁️ <b> Linuxil Userbot</b>\n\n<b>🔓 Доступные модули: {}</b>\n<b> 🔒 Скрытые:</b>",
+        "all_header": "☁️ <b> Linuxil Userbot</b>\n\n<b>🔓 Доступные модули: {}</b>\n<b>🔒 Скрытые: {}</b>",
         "mod_tmpl": "\n{} <code>{}</code>",
         "first_cmd_tmpl": ": ( {}",
         "cmd_tmpl": " | {}",
