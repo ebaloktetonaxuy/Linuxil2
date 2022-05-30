@@ -30,34 +30,34 @@ class CoreMod(loader.Module):
 
     strings = {
         "name": "Settings",
-        "too_many_args": "🚫 <b>Too many args</b>",
-        "blacklisted": "✅ <b>Chat {} blacklisted from userbot</b>",
-        "unblacklisted": "✅ <b>Chat {} unblacklisted from userbot</b>",
+        "too_many_args": "🚫 <b>Слишком много аргументов</b>",
+        "blacklisted": "✅ <b>Чат {} занесен в черный список от юзербота</b>",
+        "unblacklisted": "✅ <b>Чат {} удален из черного списка от юзербота</b>",
         "user_blacklisted": "✅ <b>User {} blacklisted from userbot</b>",
         "user_unblacklisted": "✅ <b>User {} unblacklisted from userbot</b>",
         "what_prefix": "❓ <b>What should the prefix be set to?</b>",
         "prefix_incorrect": "🚫 <b>Prefix must be one symbol in length</b>",
         "prefix_set": (
-            "✅ <b>Command prefix updated.\n"
-            "Type</b> <code>{newprefix}setprefix {oldprefix}</code>"
-            "<b>to change it back</b>"
+            "⚡ <b>Префикс команды обновлен.\n"
+            "Введи</b> <code>{newprefix}setprefix {oldprefix}</code>"
+            "<b>чтобы изменить его обратно</b>"
         ),
-        "alias_created": "✅ <b>Alias created. Access it with</b> <code>{}</code>",
+        "alias_created": "✅ <b>Псевдоним создан. Доступ к нему с</b> <code>{}</code>",
         "aliases": "<b>Aliases:</b>\n",
-        "no_command": "🚫 <b>Command</b> <code>{}</code> <b>does not exist</b>",
-        "alias_args": "🚫 <b>You must provide a command and the alias for it</b>",
-        "delalias_args": "🚫 <b>You must provide the alias name</b>",
+        "no_command": "🚫 <b>Комманда</b> <code>{}</code> <b>не существует</b>",
+        "alias_args": "🚫 <b>Вы должны указать команду и псевдоним для нее</b>",
+        "delalias_args": "🚫 <b>Вы должны указать псевдоним</b>",
         "alias_removed": "✅ <b>Alias</b> <code>{}</code> <b>removed.",
         "no_alias": "<b>🚫 Alias</b> <code>{}</code> <b>does not exist</b>",
         "no_pack": "<b>❓ What translation pack should be added?</b>",
         "bad_pack": "<b>✅ Invalid translation pack specified</b>",
         "trnsl_saved": "<b>✅ Translation pack added</b>",
         "packs_cleared": "<b>✅ Translations cleared</b>",
-        "lang_set": "<b>✅ Language changed</b>",
+        "lang_set": "<b>✅ язык изменен</b>",
         "db_cleared": "<b>✅ Database cleared</b>",
         "geek": (
-            "🕶 <b>Congrats! You are Geek!</b>\n\n"
-            "<b>GeekTG version: {}.{}.{}</b>\n"
+            "🕊️ <b>Congrats! You are Linuxil!</b>\n\n"
+            "<b>Linuxil version: {}.{}.{}</b>\n"
             "<b>Branch: master</b>"
         ),
         "geek_beta": (
