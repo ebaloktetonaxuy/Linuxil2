@@ -35,7 +35,7 @@ class GeekConfigMod(loader.Module):
     """Interactive configurator for GeekTG"""
 
     strings = {
-        "name": "LinuxilConfig",
+        "name": "Linuxil_Config",
         "configure": "🕊️ <b>Здесь вы можете настроить конфиги ваших модулей</b>",
         "configuring_mod": "🕊️ <b>Выберите вариант конфигурации для мода</b> <code>{}</code>",
         "configuring_option": (
