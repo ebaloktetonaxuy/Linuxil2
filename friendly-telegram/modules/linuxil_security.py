@@ -45,7 +45,7 @@ class GeekSecurityMod(loader.Module):
     """Control security settings (geek3.0.8alpha+)"""
 
     strings = {
-        "name": "LinuxilSecurity",
+        "name": "Linuxil_Security",
         "no_command": "🚫 <b>Command </b><code>{}</code><b> not found!</b>",
         "permissions": "🔐 <b>Here you can configure permissions for </b><code>{}{}</code>",
         "close_menu": "🙈 Close this menu",
