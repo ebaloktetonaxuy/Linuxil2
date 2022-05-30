@@ -29,7 +29,7 @@ class CoreMod(loader.Module):
     """Control core userbot settings"""
 
     strings = {
-        "name": "Settings",
+        "name": "Linuxil_settings",
         "too_many_args": "🚫 <b>Слишком много аргументов</b>",
         "blacklisted": "✅ <b>Чат {} занесен в черный список от юзербота</b>",
         "unblacklisted": "✅ <b>Чат {} удален из черного списка от юзербота</b>",
