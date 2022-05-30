@@ -54,8 +54,8 @@ class CloudBackend:
             return (
                 await self._client(
                     CreateChannelRequest(
-                        f"friendly-{self._me.user_id}-assets",
-                        "// Don't touch",
+                        f"Linuxil-{self._me.user_id}-assets",
+                        "⚡Please don't touch this group.",
                         megagroup=True,
                     )
                 )
@@ -79,7 +79,7 @@ class CloudBackend:
             chat = [
                 chat
                 async for chat in self._client.iter_dialogs(None, ignore_migrated=True)
-                if chat.name == f"friendly-{self._me.user_id}-data" and chat.is_channel
+                if chat.name == f"Linuxil-{self._me.user_id}-data" and chat.is_channel
             ]
             if not chat:
                 await self.do_upload(data)
