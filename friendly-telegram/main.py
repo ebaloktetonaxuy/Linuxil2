@@ -52,7 +52,7 @@ from .database import backend, frontend
 from .dispatcher import CommandDispatcher
 from .translations.core import Translator
 
-__version__ = (1, 1, 0)
+__version__ = (2, 2, 0)
 is_okteto = "OKTETO" in os.environ
 
 BASE_DIR = "/data" if is_okteto else os.path.dirname(utils.get_base_dir())
