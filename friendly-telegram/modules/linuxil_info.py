@@ -31,11 +31,11 @@ class GeekInfoMod(loader.Module):
         "_photo_url_doc": "You can set your own photo to geek info.",
         "default_message": (
             "<b>🕊️ Linuxil Userbot</b>\n\n"
-            "<b>🤴 Owner:</b> {owner}\n"
-            "<b>🔮 Version:</b> <i>{version}</i>\n"
-            "<b>🧱 Build:</b> {build}\n"
+            "<b>🤴 Владелец:</b> {owner}\n"
+            "<b>⚡ Версия:</b> <i>{version}</i>\n"
+            "<b>🧱 Сборка:</b> {build}\n"
             "<b>{upd}</b>\n\n"
-            "<b>{platform}</b>"
+            "<b>🗃️ Хост: {platform}</b>"
         ),
     }
 
@@ -59,7 +59,7 @@ class GeekInfoMod(loader.Module):
             {"text": "🦋 Support chat", "url": "https://t.me/linuxilchat"},
             lambda: self.strings("_custom_button_doc"),
             "photo_url",
-            "https://i.imgur.com/6FKsFcM.png",
+            "https://siasky.net/nAH4Zvz2kXx4swH0IrfpNmoBc1ogMQNTmhpwktMYGO9oIA",
             lambda: self.strings("_photo_url_doc"),
         )
 
@@ -114,7 +114,7 @@ class GeekInfoMod(loader.Module):
                     description="ℹ This will not compromise any sensitive data",
                     caption=self.build_message(),
                     parse_mode="html",
-                    thumb_url="https://github.com/GeekTG/Friendly-Telegram/raw/master/friendly-telegram/bot_avatar.png",  # noqa: E501
+                    thumb_url="https://siasky.net/nAH4Zvz2kXx4swH0IrfpNmoBc1ogMQNTmhpwktMYGO9oIA",  # noqa: E501
                     reply_markup=self.inline._generate_markup(
                         self.config["custom_buttons"]
                     ),
