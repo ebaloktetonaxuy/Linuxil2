@@ -31,13 +31,13 @@ class TestMod(loader.Module):
 
     strings = {
         "name": "Tester",
-        "set_loglevel": "🚫 <b>Please specify verbosity as an integer or string</b>",
-        "no_logs": "ℹ️ <b>You don't have any logs at verbosity {}.</b>",
-        "logs_filename": "geektg-logs.txt",
-        "logs_caption": "🗞 GeekTG logs with verbosity {}",
-        "suspend_invalid_time": "🚫 <b>Invalid time to suspend</b>",
-        "suspended": "🥶 <b>Bot suspended for</b> <code>{}</code> <b>seconds</b>",
-        "results_ping": "⏱ <b>Ping:</b> <code>{}</code> <b>ms</b>",
+        "set_loglevel": "🚫 <b>Укажите детализацию в виде целого числа или строки.</b>",
+        "no_logs": "ℹ️ <b>У вас нет журналов в подробностях {}.</b>",
+        "logs_filename": "🗃️linuxil-logs.txt",
+        "logs_caption": "🗞 Журналы GeekTG с подробностями {}",
+        "suspend_invalid_time": "🚫 <b>Неверное время для приостановки</b>",
+        "suspended": "🥶 <b>Бот заблокирован на</b> <code>{}</code> <b>секунды</b>",
+        "results_ping": "💢 <b>Пинг:</b> <code>{}</code> <b>ms</b>",
         "confidential":(
             "⚠️ <b>Log level </b><code>{}</code><b> "
             "may reveal your confidential info, be careful</b>"
@@ -49,7 +49,7 @@ class TestMod(loader.Module):
             "<code>.logs {0} force_insecure</code>"
             "<b> to ignore this warning</b>"
         ),
-        "choose_loglevel": "💁‍♂️ <b>Choose log level</b>",
+        "choose_loglevel": "🗃️ <b>Выберите уровень журнала</b>",
     }
 
     @staticmethod
@@ -93,41 +93,41 @@ class TestMod(loader.Module):
                     reply_markup=[
                         [
                             {
-                                "text": "🚨 Critical",
+                                "text": "🚨 Критический",
                                 "callback": self.logscmd,
                                 "args": (False, 50),
                             },
                             {
-                                "text": "🚫 Error",
+                                "text": "🚫 Ошибка",
                                 "callback": self.logscmd,
                                 "args": (False, 40),
                             },
                         ],
                         [
                             {
-                                "text": "⚠️ Warning",
+                                "text": "⚠️ Предупреждение",
                                 "callback": self.logscmd,
                                 "args": (False, 30),
                             },
                             {
-                                "text": "ℹ️ Info",
+                                "text": "ℹ️ Информация",
                                 "callback": self.logscmd,
                                 "args": (False, 20),
                             },
                         ],
                         [
                             {
-                                "text": "🧑‍💻 Debug",
+                                "text": "🧑‍💻 Отлаживать",
                                 "callback": self.logscmd,
                                 "args": (False, 10),
                             },
                             {
-                                "text": "👁 All",
+                                "text": "👁 Все",
                                 "callback": self.logscmd,
                                 "args": (False, 0),
                             },
                         ],
-                        [{"text": "🚫 Cancel", "callback": self.cancel}],
+                        [{"text": "🚫 Отмена", "callback": self.cancel}],
                     ],
                     message=message,
                 )
