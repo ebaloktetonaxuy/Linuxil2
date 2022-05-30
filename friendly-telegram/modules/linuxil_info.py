@@ -25,7 +25,7 @@ class GeekInfoMod(loader.Module):
     """Show userbot info (geek3.1.0alpha+)"""
 
     strings = {
-        "name": "LinuxilInfo",
+        "name": "Linuxil_Info",
         "_custom_msg_doc": "Custom message must have {owner}, {version}, {build}, {upd}, {platform} keywords",
         "_custom_button_doc": "Custom buttons.",
         "_photo_url_doc": "You can set your own photo to geek info.",
@@ -35,7 +35,7 @@ class GeekInfoMod(loader.Module):
             "<b>⚡ Версия:</b> <i>{version}</i>\n"
             "<b>🧱 Сборка:</b> {build}\n"
             "<b>{upd}</b>\n\n"
-            "<b>🗃️ Хост: {platform}</b>"
+            "<b>📼 Хост: {platform}</b>"
         ),
     }
 
