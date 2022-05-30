@@ -25,12 +25,12 @@ class GeekInfoMod(loader.Module):
     """Show userbot info (geek3.1.0alpha+)"""
 
     strings = {
-        "name": "GeekInfo",
+        "name": "LinuxilInfo",
         "_custom_msg_doc": "Custom message must have {owner}, {version}, {build}, {upd}, {platform} keywords",
         "_custom_button_doc": "Custom buttons.",
         "_photo_url_doc": "You can set your own photo to geek info.",
         "default_message": (
-            "<b>🕶 GeekTG Userbot</b>\n\n"
+            "<b>🕊️ Linuxil Userbot</b>\n\n"
             "<b>🤴 Owner:</b> {owner}\n"
             "<b>🔮 Version:</b> <i>{version}</i>\n"
             "<b>🧱 Build:</b> {build}\n"
@@ -56,7 +56,7 @@ class GeekInfoMod(loader.Module):
             False,
             lambda: self.strings("_custom_msg_doc"),
             "custom_buttons",
-            {"text": "🤵‍♀️ Support chat", "url": "https://t.me/GeekTGChat"},
+            {"text": "🦋 Support chat", "url": "https://t.me/linuxilchat"},
             lambda: self.strings("_custom_button_doc"),
             "photo_url",
             "https://i.imgur.com/6FKsFcM.png",
@@ -71,9 +71,9 @@ class GeekInfoMod(loader.Module):
             repo = git.Repo()
             diff = repo.git.log(["HEAD..origin", "--oneline"])
             upd = (
-                "⚠️ Update required </b><code>.update</code><b>"
+                "⚠️ Требуется обновление </b><code>.update</code><b>"
                 if diff
-                else "✅ Up-to-date"
+                else "✅ Уже обновлен"
             )
         except Exception:
             upd = ""
