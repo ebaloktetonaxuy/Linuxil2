@@ -24,17 +24,17 @@ class GeekSettingsMod(loader.Module):
     """Advanced settings for GeekTG"""
 
     strings = {
-        "name": "LinuxilSettings",
-        "watchers": "👀 <b>Watchers:</b>\n\n<b>{}</b>",
+        "name": "Linuxil_Settings",
+        "watchers": "👀 <b>Наблюдатели:</b>\n\n<b>{}</b>",
         "mod404": "🚫 <b>Watcher {} not found</b>",
         "already_disabled": "👀 <b>Watcher {} is already disabled</b>",
         "disabled": "👀 <b>Watcher {} is now <u>disabled</u></b>",
         "enabled": "👀 <b>Watcher {} is now <u>enabled</u></b>",
-        "args": "🚫 <b>You need to specify watcher name</b>",
-        "user_nn": "🔰 <b>NoNick for this user is now {}</b>",
-        "no_cmd": "🔰 <b>Please, specify command to toggle NoNick for</b>",
+        "args": "🚫 <b>Вам нужно указать имя наблюдателя</b>",
+        "user_nn": "🔰 <b>NoNick для этого пользователя теперь {}</b>",
+        "no_cmd": "🔰 <b>Укажите команду для включения NoNick для</b>",
         "cmd_nn": "🔰 <b>NoNick for </b><code>{}</code><b> is now {}</b>",
-        "cmd404": "🔰 <b>Command not found</b>",
+        "cmd404": "🔰 <b>Команда не найдена</b>",
         "inline_settings": "⚙️ <b>Здесь вы можете настроить параметры Linuxil</b>",
         "confirm_update": "🪂 <b>Пожалуйста, подтвердите, что вы хотите обновить. Ваш бот будет перезапущен</b>",
         "confirm_restart": "🔄 <b>Пожалуйста, подтвердите, что хотите перезапустить</b>",
