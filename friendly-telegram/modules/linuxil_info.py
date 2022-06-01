@@ -59,7 +59,7 @@ class GeekInfoMod(loader.Module):
             {"text": "👩‍🔧 Support chat", "url": "https://t.me/linuxilchat"},
             lambda: self.strings("_custom_button_doc"),
             "photo_url",
-            "https://siasky.net/_AbZcygDhGAKrYBlZvRUfTwVs6bkfZSQOXEb4WfLvNmUxg",
+            "https://siasky.net/fAGDN9wfyejR3vtdnjzZVguNQABe7fDB0gguBjF0DF3WjQ",
             lambda: self.strings("_photo_url_doc"),
         )
 
@@ -114,7 +114,7 @@ class GeekInfoMod(loader.Module):
                     description="ℹ This will not compromise any sensitive data",
                     caption=self.build_message(),
                     parse_mode="html",
-                    thumb_url="https://siasky.net/nAH4Zvz2kXx4swH0IrfpNmoBc1ogMQNTmhpwktMYGO9oIA",  # noqa: E501
+                    thumb_url="https://siasky.net/fAGDN9wfyejR3vtdnjzZVguNQABe7fDB0gguBjF0DF3WjQ",  # noqa: E501
                     reply_markup=self.inline._generate_markup(
                         self.config["custom_buttons"]
                     ),
