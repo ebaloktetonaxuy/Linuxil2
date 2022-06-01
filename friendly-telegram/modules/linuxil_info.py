@@ -32,7 +32,7 @@ class GeekInfoMod(loader.Module):
         "default_message": (
             "<b>🕊️ Linuxil Userbot</b>\n\n"
             "<b>🤴 Владелец:</b> {owner}\n"
-            "<b>⚡ Версия:</b> <i>{version}</i>\n"
+            "<b>⚡ Версия:</b> <i>{version} #{build}</i>\n"
             "<b>🧱 Сборка:</b> {build}\n"
             "<b>{upd}</b>\n\n"
             "<b>📼 Хост: {platform}</b>"
