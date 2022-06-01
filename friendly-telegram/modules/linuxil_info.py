@@ -56,10 +56,10 @@ class GeekInfoMod(loader.Module):
             False,
             lambda: self.strings("_custom_msg_doc"),
             "custom_buttons",
-            {"text": "🦋 Support chat", "url": "https://t.me/linuxilchat"},
+            {"text": "👩‍🔧 Support chat", "url": "https://t.me/linuxilchat"},
             lambda: self.strings("_custom_button_doc"),
             "photo_url",
-            "https://siasky.net/nAH4Zvz2kXx4swH0IrfpNmoBc1ogMQNTmhpwktMYGO9oIA",
+            "https://siasky.net/_AbZcygDhGAKrYBlZvRUfTwVs6bkfZSQOXEb4WfLvNmUxg",
             lambda: self.strings("_photo_url_doc"),
         )
 
