@@ -35,7 +35,7 @@ class GeekInfoMod(loader.Module):
             "<b>⚡ Версия:</b> <i>{version} #{build}</i>\n"
             "<b>{upd}</b>\n\n"
             "<b>📼 Хост: {platform}</b>"
-            "<b>🪄 Канал: <a href="https://t.me/linuxil1> LINUXIL</a>"
+            "<b>🌉 Дата последнего обновления: 01.06.22
         ),
     }
 
