@@ -330,3 +330,4 @@ class HelpMod(loader.Module):
         self._client = client
         self.is_bot = await client.is_bot()
         self._db = db
+hdbdvdhdjd
